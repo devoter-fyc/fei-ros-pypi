@@ -8,7 +8,7 @@ currently being supported with security updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | 0.1.x   | :white_check_mark: |
-| legacy-0.1.x   | :x:                |
+| legacy-0.1.x   | :white_check_mark: |
 ### Reporting a Vulnerability
 
 Use this section to tell people how to report a vulnerability.
