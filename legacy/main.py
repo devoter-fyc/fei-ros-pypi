@@ -1,6 +1,6 @@
 #Main FEI Operating System.
-#Copyright @FEI Production Group 2020-2022.
-#########This is an open-source project -- at least now.You cannot use it,however.#########
+#Copyright @FEI Group 2020-2022.
+#########This is an open-source project.#########
 
 import os,re,time
 print('Setup system,please wait')
