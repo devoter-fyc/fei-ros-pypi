@@ -8,7 +8,7 @@ feios_utils.out("Hello")
 ```
 * Note that the library is licensed under GNU GPL v3+.Your app should be licensed under that too.
 
-====================
+----------------------
 
 ### Changelog 
 #### Changelog @ 0.2.0a2
