@@ -1,1 +1,3 @@
-This is main feios.
+### FEIOS
+* An os still indev.
+* Developed by fyc,it is remade.
