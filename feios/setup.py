@@ -1,5 +1,3 @@
-#-*- coding : utf-8-*-
-# coding:unicode_escape
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
@@ -7,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="feios",
-    version="0.2.0",
+    version="0.3.0dev1",
     author="fyc",
     author_email="fycsfls_winter@126.com",
     description="The feios main module",
@@ -25,6 +23,6 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    python_requires=">=3.7",
+    python_requires=">=3.5",
     install_requires=['feios-utils']
 )
