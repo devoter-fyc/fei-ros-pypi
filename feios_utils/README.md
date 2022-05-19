@@ -8,9 +8,13 @@ feios_utils.out("Hello")
 ```
 * Note that the library is licensed under GNU GPL v3+.Your app should be licensed under that too.
 
-----------------------
+=========================
 
-### Changelog 
+### Changelog
+#### Changelog @ 0.2.0b2
+* added legacy "egg" dist
+#### Changelog @ 0.2.0b1
+* Again fixed corrupt IndexError in funcs.run,since last fix is not successful.
 #### Changelog @ 0.2.0a2
 * Fixed corrupt IndexError in funcs.run.
 #### Changelog @ 0.2.0a1
