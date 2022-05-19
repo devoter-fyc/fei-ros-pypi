@@ -8,9 +8,9 @@ def load_cmd(cmd : str):
         return
     elif cmd[:3] == "out":
         if cmd[3] == " ":
-            print(cmd[4:])
+            utils.out(cmd[4:])
         else:
-            print("""Input error:               ERROR 001
+            utils.outline("""Input error:               ERROR 001
             There should be a space.
             Execution halted.
             """)
@@ -23,7 +23,7 @@ def load_cmd(cmd : str):
     elif cmd == "":
         return
     else:
-        print("""Input error:                   ERROR 002
+        utils.outline("""Input error:                   ERROR 002
         No such command.
         Execution halted.
         """)
