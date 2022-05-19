@@ -21,20 +21,22 @@ def run(tl: list[str]):
         elif line[:4] == "outl":
             if len(line) == 4:
                 print("")
-                return 0
+                continue
             else:
                 if line[4] == " ":
                     print(line[5:])
+                    continue
                 else:
                     print("""Input and/or script error:\
                     ERROR 001
                     There should be a space.
                     Execution halted.
                     """)
-            return 2
+                    return 2
         elif line[:3] == "out":
             if len(line) == 3:
                 print("",end="")
+                continue
             if line[3] != " ":
                 print("""Input and/or script error:\
                 ERROR 001
@@ -54,7 +56,6 @@ def run(tl: list[str]):
             Execution halted.
             """)
             return 2
-    return 0
 
 
 def runbatch(pof):
