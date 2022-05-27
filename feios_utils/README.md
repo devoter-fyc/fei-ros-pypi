@@ -11,6 +11,9 @@ feios_utils.out("Hello")
 =========================
 
 ### Changelog
+### Changelog @ 0.2.0b3
+* Finally fixed IndexError.
+* deleted 'egg' support.
 #### Changelog @ 0.2.0b2
 * added legacy "egg" dist
 #### Changelog @ 0.2.0b1

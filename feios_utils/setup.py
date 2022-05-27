@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="feios-utils",
-    version="0.2.0.b2",
+    version="0.2.0.b3",
     author="fyc",
     author_email="fycsfls_winter@126.com",
     description="A small util package for feios",

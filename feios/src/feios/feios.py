@@ -9,6 +9,7 @@ def load_cmd(cmd : str):
     elif cmd[:3] == "out":
         if cmd[3] == " ":
             utils.out(cmd[4:])
+            return
         else:
             utils.outline("""Input error:               ERROR 001
             There should be a space.

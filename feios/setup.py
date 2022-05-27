@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="feios",
-    version="0.3.0dev1",
+    version="0.3.0dev3",
     author="fyc",
     author_email="fycsfls_winter@126.com",
     description="The feios main module",
@@ -19,10 +19,10 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         "Operating System :: OS Independent",
-        "Development Status :: 5 - Production/Stable"
+        "Development Status :: 2 - Pre-Alpha"
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.5",
-    install_requires=['feios-utils']
+    install_requires=['feios-utils>=0.2.0b3']
 )
