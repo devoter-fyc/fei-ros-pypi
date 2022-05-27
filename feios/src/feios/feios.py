@@ -7,6 +7,9 @@ def load_cmd(cmd : str):
     if cmd[0] == "#":
         return
     elif cmd[:3] == "out":
+        if len(cmd) == 3:
+            print("")
+            return
         if cmd[3] == " ":
             utils.out(cmd[4:])
             return
