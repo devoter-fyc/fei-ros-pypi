@@ -3,6 +3,8 @@
 * Developed by fyc,it is remade.
 
 ### Changelog
+#### 0.3.0a2
+* Added outl.
 #### Changelog @ 0.3.0a1
 * Fixed Unfixed IndexError in the main module.
 #### Changelog @ 0.3.0dev3

@@ -6,6 +6,19 @@ def load_cmd(cmd : str):
     """Load a cmd."""
     if cmd[0] == "#":
         return
+    elif cmd[:4] == "outl":
+        if len(cmd) == 4:
+            print("")
+            return
+        if cmd[4] == " ":
+            utils.out(cmd[5:])
+            return
+        else:
+            utils.outline("""Input error:               ERROR 001
+            There should be a space.
+            Execution halted.
+            """)
+            return
     elif cmd[:3] == "out":
         if len(cmd) == 3:
             print("")
