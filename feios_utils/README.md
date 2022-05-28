@@ -11,6 +11,8 @@ feios_utils.out("Hello")
 =========================
 
 ### Changelog
+### 0.2.0b4
+* Added support for exts.
 ### Changelog @ 0.2.0b3
 * Finally fixed IndexError.
 * deleted 'egg' support.

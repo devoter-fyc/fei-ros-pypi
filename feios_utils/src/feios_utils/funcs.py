@@ -27,8 +27,7 @@ def run(tl: list[str]):
                     print(line[5:])
                     continue
                 else:
-                    print("""Input and/or script error:\
-                    ERROR 001
+                    print("""Input and/or script error:ERROR 001
                     There should be a space.
                     Execution halted.
                     """)
@@ -38,8 +37,7 @@ def run(tl: list[str]):
                 print("",end="")
                 continue
             if line[3] != " ":
-                print("""Input and/or script error:\
-                ERROR 001
+                print("""Input and/or script error:ERROR 001
                 There should be a space.
                 Execution halted.
                 """)
@@ -50,8 +48,7 @@ def run(tl: list[str]):
         elif line[:4] == "exit":
             return 0
         else:
-            print("""Input and/or script error:\
-            ERROR 002
+            print("""Input and/or script error:ERROR 002
             No such command
             Execution halted.
             """)
@@ -64,6 +61,17 @@ def runbatch(pof):
     content = f.readlines()
     ret = run(content)
     return ret
+
+def load_ext(extpth,*,extt="python"):
+    if extt != "python":
+        outline("""It seems you're not using a python extension.
+        We'll soon support other eztensions.
+        """)
+        return 3
+    else:
+        import subprocess
+        ret = subprocess.call(f'py {extpth}')
+        return ret
 
 
 def load_cmd(cmd : str):
@@ -78,7 +86,7 @@ def load_cmd(cmd : str):
             if cmd[4] == " ":
                 print(cmd[5:])
             else:
-                print("""Input error:               ERROR 001
+                print("""Input error:ERROR 001
             There should be a space.
             Execution halted.
             """)
@@ -90,7 +98,7 @@ def load_cmd(cmd : str):
         if cmd[3] == " ":
             print(cmd[4:],end="")
         else:
-            print("""Input error:               ERROR 001
+            print("""Input error:ERROR 001
             There should be a space.
             Execution halted.
             """)
@@ -104,7 +112,7 @@ def load_cmd(cmd : str):
     elif cmd == "":
         return
     else:
-        print("""Input error:                   ERROR 002
+        print("""Input error:ERROR 002
         No such command.
         Execution halted.
         """)
