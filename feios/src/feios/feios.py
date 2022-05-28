@@ -11,7 +11,7 @@ def load_cmd(cmd : str):
             print("")
             return
         if cmd[4] == " ":
-            utils.out(cmd[5:])
+            utils.outline(cmd[5:])
             return
         else:
             utils.outline("""Input error:               ERROR 001
