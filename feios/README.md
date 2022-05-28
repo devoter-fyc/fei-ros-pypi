@@ -3,6 +3,8 @@
 * Developed by fyc,it is remade.
 
 ### Changelog
+#### 0.3.0b1
+* Fixed CVE-001
 #### 0.3.0a2
 * Added outl.
 #### Changelog @ 0.3.0a1
