@@ -3,6 +3,8 @@
 * Developed by fyc,it is remade.
 
 ### Changelog
+#### 0.4.0dev2
+* Requires at least setuptools 47 to build.
 #### 0.4.0dev1
 * Removed "load_cmd" from main module.Instead,using load_cmd from feios_utils.funcs.
 #### 0.3.2
