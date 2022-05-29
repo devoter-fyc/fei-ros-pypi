@@ -11,9 +11,13 @@ feios_utils.out("Hello")
 =========================
 
 ### Changelog
-### 0.2.0b4
+#### 0.2.0post1
+* Fixed CVE-002:DevStatusError.
+#### 0.2.0
+* Added support again for exts.
+#### 0.2.0b4
 * Added support for exts.
-### Changelog @ 0.2.0b3
+#### Changelog @ 0.2.0b3
 * Finally fixed IndexError.
 * deleted 'egg' support.
 #### Changelog @ 0.2.0b2
