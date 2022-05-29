@@ -3,8 +3,10 @@
 * Developed by fyc,it is remade.
 
 ### Changelog
+#### 0.4.0dev1
+* Removed "load_cmd" from main module.Instead,using load_cmd from feios_utils.funcs.
 #### 0.3.2
-* **MUCH SORRY* Because the author cannot afford a Mac,so from now on small releases wont be supporting MacOS.
+* *MUCH SORRY* Because the author cannot afford a Mac,so from now on small releases wont be supporting MacOS.
 * We recommend using linux or Windows.
 #### 0.3.1
 * Deleted useless spaces in err msg.
