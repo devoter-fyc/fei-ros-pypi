@@ -86,12 +86,13 @@ def load_cmd(cmd : str):
         else:
             if cmd[4] == " ":
                 print(cmd[5:])
+                return
             else:
                 print("""Input error:ERROR 001
-            There should be a space.
-            Execution halted.
-            """)
-            return
+                There should be a space.
+                Execution halted.
+                """)
+                return
     elif cmd[:3] == "out":
         if len(cmd) == 3:
             print("")
@@ -104,7 +105,22 @@ def load_cmd(cmd : str):
             Execution halted.
             """)
             return
-
+    elif cmd[:3] == "run":
+        if len(cmd) == 3:
+            print("""Input error:ERROR 003
+            Not specific script.
+            Execution halted.
+            """)
+            return
+        elif cmd[3] != " ":
+            print("""Input error:ERROR 001
+            There should be a space.
+            Execution halted.
+            """)
+            return
+        else:
+            runbatch(cmd[4:])
+            return
     elif cmd[:4] == "exit":
         if len(cmd) >= 5:
             exit(cmd[5:])
