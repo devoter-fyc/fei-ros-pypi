@@ -3,8 +3,11 @@
 * Developed by fyc,it is remade.
 
 ### Changelog
-#### 0.3.0post1
-* Fixed CVE-003:DevStatusError
+#### 0.3.2
+* **MUCH SORRY* Because the author cannot afford a Mac,so from now on small releases wont be supporting MacOS.
+* We recommend using linux or Windows.
+#### 0.3.1
+* Deleted useless spaces in err msg.
 #### 0.3.0
 * From now on,we will provide windows built-dist for major releases 
 #### 0.3.0b1
