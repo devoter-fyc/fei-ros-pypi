@@ -3,6 +3,8 @@
 * Developed by fyc,it is remade.
 
 ### Changelog
+#### 0.3.0post1
+* Fixed CVE-003:DevStatusError
 #### 0.3.0
 * From now on,we will provide windows built-dist for major releases 
 #### 0.3.0b1
