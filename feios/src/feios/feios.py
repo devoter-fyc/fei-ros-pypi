@@ -14,7 +14,7 @@ def load_cmd(cmd : str):
             utils.outline(cmd[5:])
             return
         else:
-            utils.outline("""Input error:               ERROR 001
+            utils.outline("""Input error:ERROR 001
             There should be a space.
             Execution halted.
             """)
@@ -27,7 +27,7 @@ def load_cmd(cmd : str):
             utils.out(cmd[4:])
             return
         else:
-            utils.outline("""Input error:               ERROR 001
+            utils.outline("""Input error:ERROR 001
             There should be a space.
             Execution halted.
             """)
@@ -40,7 +40,7 @@ def load_cmd(cmd : str):
     elif cmd == "":
         return
     else:
-        utils.outline("""Input error:                   ERROR 002
+        utils.outline("""Input error:ERROR 002
         No such command.
         Execution halted.
         """)
