@@ -92,7 +92,7 @@ def runbatch(pof):
 def load_ext(extpth,*,extt="python"):
     if extt != "python":
         outline("""It seems you're not using a python extension.
-        We'll soon support other eztensions.
+        We'll soon support other extensions.
         """)
         return 3
     else:

@@ -11,6 +11,8 @@ feios_utils.out("Hello")
 =========================
 
 ### Changelog
+#### 0.3.0a1
+* Fixed Typo.
 #### 0.3.0dev5
 * Fixed CVE-004:Unicode-must-halt.
 #### 0.3.0dev2
