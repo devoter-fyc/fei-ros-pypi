@@ -19,7 +19,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         "Operating System :: OS Independent",
-        "Development Status :: 5 - Production/Stable"
+        "Development Status :: 2 - Pre-Alpha"
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
