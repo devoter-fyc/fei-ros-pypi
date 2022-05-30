@@ -57,7 +57,33 @@ def run(tl: list[str]):
 
 def runbatch(pof):
     """Read a batch script and execute it."""
-    f = open(pof, 'r')
+    try:
+        f = open(pof,'r')
+    except FileNotFoundError:
+        print("""Input error:ERROR 004
+                No such file.
+                Execution halted.
+                """)
+        return 2
+    except UnicodeDecodeError as e:
+        print(f"""File error:ERROR 005
+        Invalid Encoding at {e}.
+        Execution halted.
+        """)
+    except OSError:
+        print("""System fatal error:FATAL 001
+        Host OS Error.
+        Report this to https://github.com/devoter-fyc/fei-ros.
+        Execution halted.
+        """)
+        return 255
+    except Exception:
+        print("""System fatal error:FATAL 000
+        Unknown Error.
+        Report this to https://github.com/devoter-fyc/fei-ros.
+        Execution halted.
+        """)
+        return 255
     content = f.readlines()
     ret = run(content)
     return ret

@@ -11,6 +11,10 @@ feios_utils.out("Hello")
 =========================
 
 ### Changelog
+#### 0.3.0dev5
+* Fixed CVE-004:Unicode-must-halt.
+#### 0.3.0dev2
+* More error msgs.
 #### 0.3.0dev1
 * Added full support for exts.
 #### 0.2.0post1
