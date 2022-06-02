@@ -1,4 +1,5 @@
 # FEI OS useful utils
+from . import errmsg
 
 __all__ = ["out", "outline", "run", "runbatch","load_cmd"]
 
@@ -27,20 +28,14 @@ def run(tl: list[str]):
                     print(line[5:])
                     continue
                 else:
-                    print("""Input and/or script error:ERROR 001
-                    There should be a space.
-                    Execution halted.
-                    """)
+                    print(errmsg.ERR_SPACES)
                     return 2
         elif line[:3] == "out":
             if len(line) == 3:
                 print("",end="")
                 continue
             if line[3] != " ":
-                print("""Input and/or script error:ERROR 001
-                There should be a space.
-                Execution halted.
-                """)
+                print(errmsg.ERR_SPACES)
                 return 2
             else:
                 print(line[4:])
@@ -48,10 +43,7 @@ def run(tl: list[str]):
         elif line[:4] == "exit":
             return 0
         else:
-            print("""Input and/or script error:ERROR 002
-            No such command
-            Execution halted.
-            """)
+            print(errmsg.ERR_NO_COMMAND)
             return 2
 
 
@@ -60,29 +52,15 @@ def runbatch(pof):
     try:
         f = open(pof,'r')
     except FileNotFoundError:
-        print("""Input error:ERROR 004
-                No such file.
-                Execution halted.
-                """)
+        print(errmsg.ERR_NO_FILE)
         return 2
     except UnicodeDecodeError as e:
-        print(f"""File error:ERROR 005
-        Invalid Encoding at {e}.
-        Execution halted.
-        """)
+        print(errmsg.ERR_ENCODING(e))
     except OSError:
-        print("""System fatal error:FATAL 001
-        Host OS Error.
-        Report this to https://github.com/devoter-fyc/fei-ros.
-        Execution halted.
-        """)
+        print(errmsg.FATAL_OS)
         return 255
     except Exception:
-        print("""System fatal error:FATAL 000
-        Unknown Error.
-        Report this to https://github.com/devoter-fyc/fei-ros.
-        Execution halted.
-        """)
+        print(errmsg.FATAL_UNKNOWN)
         return 255
     content = f.readlines()
     ret = run(content)
@@ -114,10 +92,7 @@ def load_cmd(cmd : str):
                 print(cmd[5:])
                 return
             else:
-                print("""Input error:ERROR 001
-                There should be a space.
-                Execution halted.
-                """)
+                print(errmsg.ERR_SPACES)
                 return
     elif cmd[:3] == "out":
         if len(cmd) == 3:
@@ -126,23 +101,14 @@ def load_cmd(cmd : str):
         if cmd[3] == " ":
             print(cmd[4:],end="")
         else:
-            print("""Input error:ERROR 001
-            There should be a space.
-            Execution halted.
-            """)
+            print(errmsg.ERR_SPACES)
             return
     elif cmd[:3] == "run":
         if len(cmd) == 3:
-            print("""Input error:ERROR 003
-            Not specific script.
-            Execution halted.
-            """)
+            print(errmsg.ERR_NOT_SPECIFIC_SCRIPT)
             return
         elif cmd[3] != " ":
-            print("""Input error:ERROR 001
-            There should be a space.
-            Execution halted.
-            """)
+            print(errmsg.ERR_SPACES)
             return
         else:
             runbatch(cmd[4:])
@@ -155,9 +121,6 @@ def load_cmd(cmd : str):
     elif cmd == "":
         return
     else:
-        print("""Input error:ERROR 002
-        No such command.
-        Execution halted.
-        """)
+        print(errmsg.ERR_NO_COMMAND)
         return
     return
