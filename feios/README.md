@@ -1,6 +1,5 @@
 ### FEIOS
-* An os still indev.
-* Developed by fyc,it is remade.
+* Warning: THE CURRENT BRANCH IS EOL. USE THE NEWER VERSION HERE: https://github.com/feisoft-products/FEIBox
 
 ### Changelog
 #### 0.4.0dev1
